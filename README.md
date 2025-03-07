@@ -46,7 +46,7 @@ This guide provides step-by-step instructions on how to install and configure **
    - Select **Language, Time, and Keyboard Layout** → Click **Next**
    - Choose **Install Windows Server** and click **Next**
    - Choose **Windows Server 2025 Standard/Datacenter** (I did Datacenter Evaluation(Desktop Experience)
-   - Select **Custom Installation** → Choose your virtual disk → Click **Next**
+   - Select **Custom Installation** → Choose your virtual disk → Click **Next**(I only had 1 disk)
 7. Wait for installation and restart when prompted
 
 ## Post-Installation Setup
@@ -82,6 +82,7 @@ Install-WindowsFeature -name Web-Server -IncludeManagementTools
 | Issue | Solution |
 |--------|------------|
 | VirtualBox driver error | Run `sc.exe query vboxsup` and restart VirtualBox |
+| Can't press ctrl-alt-del | If you can't do ctrl-alt-del, click input>keyboard>insert ctrl-alt-del on the virtualbox feature on the top|
 | No internet access | Use Bridged Adapter instead of NAT |
 | Remote Desktop not working | Enable in `System Properties > Remote Settings` |
 
@@ -91,5 +92,5 @@ Install-WindowsFeature -name Web-Server -IncludeManagementTools
 
 ---
 
-### Author: Your Name
-Last Updated: `YYYY-MM-DD`
+### Author: Anthony Phyo
+Last Updated: `7/3/2-2025`
